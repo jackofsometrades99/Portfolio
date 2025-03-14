@@ -1,38 +1,300 @@
-.App {
-  text-align: center;
+/* src/App.css */
+
+/* Enable smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
+.App {
+  text-align: center;
+  position: relative;
+}
+
+/* Full-Screen Intro Section */
+.intro-section {
+  height: 100vh;
+  width: 100%;
+  position: relative; /* Needed for absolute positioning of Three.js Canvas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Blue-White Gradient */
+}
+
+.intro-content {
+  position: relative;
+  z-index: 1; /* Ensure content stays above particles */
+  animation: fadeInUp 2s ease-out;
+}
+
+.catchy-phrase {
+  font-family: 'Kingsland', serif; /* Ensure this font is correctly loaded */
+  font-size: 7rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.catchy-phrase a {
+  user-select: none; /* Make text non-selectable */
+  color: blue;
+  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+  display: inline-block; /* Needed for transform to work properly */
+}
+
+.catchy-phrase a:hover {
+  color: violet; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.catchy-phrase a:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+
+.intro-subtitle {
+  font-family: 'Goudy Old Style', sans-serif; /* Ensure this font is correctly loaded */
+  font-size: 1.5rem;
+  font-style: italic;
+  color: blue;
+  user-select: none; /* Make text non-selectable */
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Contact Section */
+.contact-section {
+  position: relative;
+  padding-bottom: 50px; /* Extra space for the watermark */
+  text-align: center;
+  background-color: #525151;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact-icon {
+  position: relative;
+  font-size: 2.5rem;
+  color: #2196F3;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.contact-icon:hover {
+  transform: scale(1.2);
+  color: #0d47a1;
+}
+
+.contact-icon .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  font-size: 0.8rem;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-section-text {
+  color: #fff;
+}
+/* Watermark (positioned at the bottom right corner) */
+.watermark {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+}
+
+/* About Section Styling */
+.about-section {
+  background-color: #ffffff; /* Black background */
+  color: #ffffff; /* White text */
+  min-height: 60vh; /* Adjust as needed */
+  padding: 40px 0; /* Reduced vertical padding */
+}
+
+.about-section .text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Goudy Old Style', sans-serif; /* Changed from 'Optima' to 'Roboto' */
+  color: black;
+}
+
+.about-section .text-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: black;
+  font-family: 'Goudy Old Style', sans-serif; /* Changed from 'Arial' to 'Roboto' */
+}
+
+/* Image Container Styling */
+.image-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust based on your design */
+  margin: 0 auto;
+  overflow: hidden; /* Hide any overflow */
+  padding: 20px; /* Optional padding */
 }
 
-.App-link {
-  color: #61dafb;
+/* Image Wrapper */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Individual Images */
+.image-wrapper .blue-image {
+  width: 100%;
+  max-width: 280px; /* Adjust as needed */
+  height: auto;
+  transition: transform 0.3s ease;
+  scale: 1.5;
+}
+
+/* Positioning Images to Overlap */
+.image-wrapper .blue-image {
+  margin-left: -140px; /* Half of the image width to overlap */
+  z-index: 1;
+}
+
+.image-wrapper:hover .blue-image {
+  /* transform: translateX(20px); */
+  scale: 1.5;
+}
+
+/* Ensure images are responsive */
+@media (max-width: 768px) {
+
+  .about-section {
+    min-height: 80vh; /* Increase height on smaller screens */
+    padding: 40px 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .about-section .text-container h2 {
+    font-size: 2rem;
   }
+
+  .about-section .text-container p {
+    font-size: 1rem;
+  }
+
+  .image-container {
+    max-width: 500px; /* Reduce container size */
+    padding: 15px;
+  }
+
+  .image-wrapper .blue-image,
+  .image-wrapper .bw-image {
+    max-width: 200px;
+    margin-left: -100px; /* Adjust based on new image size */
+  }
+}
+
+@media (max-width: 576px) {
+
+  .about-section {
+    min-height: 100vh; /* Further increase height on very small screens */
+    padding: 20px 0;
+  }
+
+  .image-container {
+    max-width: 300px; /* Further reduce container size */
+    padding: 10px;
+  }
+
+  .image-wrapper {
+    flex-direction: column; /* Stack images vertically on very small screens */
+    align-items: center;
+  }
+
+  .image-wrapper .blue-image,
+  .image-wrapper .bw-image {
+    max-width: 150px;
+    margin-left: 0; /* Remove negative margins */
+    margin-top: -50px; /* Optional: slight overlap */
+  }
+
+  /* Adjust z-index to maintain visibility */
+  .image-wrapper .blue-image {
+    z-index: 1;
+  }
+
+  .image-wrapper .bw-image {
+    z-index: 2;
+    margin-top: -30px; /* Adjust to overlap */
+  }
+
+  /* Remove hover effects for small screens */
+  .image-wrapper:hover .bw-image,
+  .image-wrapper:hover .blue-image {
+    transform: none;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 10; /* Ensure footer stays above other elements if needed */
+}
+
+/* Ensure other sections have proper z-index if needed */
+section.container {
+  position: relative;
+  z-index: 1;
 }

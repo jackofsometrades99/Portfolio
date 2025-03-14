@@ -1,0 +1,18 @@
+/* src/assets/fonts/fonts.css */
+
+@font-face {
+    font-family: 'Goudy Old Style';
+    src: url('Goudy Old Style.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Kingsland';
+    src: url('Kingsland.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  

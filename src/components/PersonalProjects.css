@@ -1,0 +1,100 @@
+/* src/components/PersonalProjects.css */
+
+.personal-projects-section {
+    padding: 40px 0;
+  }
+  
+  .personal-projects-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Grid Container */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+  }
+  
+  /* Project Card */
+  .project-card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 200px; /* Fixed height for visual consistency */
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Overlay Container */
+  .card-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Logo and Text Styling */
+  .project-logo,
+  .project-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s ease;
+  }
+  
+  /* Logo Initially Visible */
+  .project-logo {
+    opacity: 1;
+    width: 60px; /* Adjust size as needed */
+  }
+  
+  /* Text Initially Hidden */
+  .project-text {
+    opacity: 0;
+    text-align: center;
+    padding: 0 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  
+  /* Hover Effects: Logo fades out, Text fades in */
+  .project-card:hover .project-logo {
+    opacity: 0;
+  }
+  
+  .project-card:hover .project-text {
+    opacity: 1;
+  }
+  
+  /* Typography for Text */
+  .project-text h3 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+    color: #fff; /* Default text color */
+  }
+  
+  .project-text p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #f0f0f0; /* Default text color */
+  }
+  
+  /* Override for Medium type: set text color to black */
+  .project-text.medium-text h3,
+  .project-text.medium-text p {
+    color: #000;
+  }
+  

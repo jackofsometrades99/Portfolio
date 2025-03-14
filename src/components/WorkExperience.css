@@ -1,0 +1,119 @@
+/* src/components/WorkExperience.css */
+
+/* Section Title */
+.work-experience-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 20px auto;
+  padding: 15px;
+  background: linear-gradient(135deg, #585757, #585757);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider */
+.carousel-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Carousel Card */
+.carousel-card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin: 0 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  opacity: 0.6;
+  transform: scale(0.9);
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Active Card */
+.carousel-card.active {
+  opacity: 1;
+  transform: scale(1);
+  background-color: #f7f7f7;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Hover Effect */
+.carousel-card:hover {
+  transform: scale(1.02);
+}
+
+/* Typography within Card */
+.carousel-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.carousel-card h6 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #777;
+}
+
+.carousel-card .carousel-date {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.carousel-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #444;
+}
+
+/* Arrow Buttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #555;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel-card {
+    width: 250px;
+    margin: 0 8px;
+  }
+}
