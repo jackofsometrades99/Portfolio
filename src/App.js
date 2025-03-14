@@ -107,7 +107,7 @@ function App() {
             <span className="tooltip">LinkedIn</span>
           </a>
           <a
-            href="https://drive.google.com/file/d/18L-Cg96S_4eVjHQ1XcV9HjU7k48xjvPH/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Gnhjjbn8K0EBWy2M6FwL0OL7aAvFFQKT/view?usp=sharing"
             className="contact-icon"
             download="Sambhu_Nampoothiri_G.pdf"
             title="Resume"
