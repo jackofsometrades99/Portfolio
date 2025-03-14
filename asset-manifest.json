@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bb702a40.css",
-    "main.js": "/portfolio/static/js/main.e0fe9f9e.js",
-    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/python_logo.png": "/portfolio/static/media/python_logo.368ff420d152a71031c0.png",
-    "static/media/deeplearning_logo.png": "/portfolio/static/media/deeplearning_logo.3c6368e202f6eb2ee79c.png",
-    "static/media/Goudy Old Style.woff": "/portfolio/static/media/Goudy Old Style.334887ee3ea09bab6520.woff",
-    "static/media/k8_logo.png": "/portfolio/static/media/k8_logo.7cdb846c2eabcda532bb.png",
-    "static/media/black_me.png": "/portfolio/static/media/black_me.9e70355a3999bdf0ba64.png",
-    "static/media/elasticsearch_logo.png": "/portfolio/static/media/elasticsearch_logo.5ba4825db78dbfbfc7d6.png",
-    "static/media/Kingsland.woff": "/portfolio/static/media/Kingsland.1bafd6c961a8add15fda.woff",
-    "static/media/rest_logo.png": "/portfolio/static/media/rest_logo.00cc7d22aaf3dee9ed5e.png",
-    "static/media/gunicorn_logo.png": "/portfolio/static/media/gunicorn_logo.918e94f42880def0b264.png",
-    "static/media/flask_logo.png": "/portfolio/static/media/flask_logo.8f280e616cffd5c0f1d9.png",
-    "static/media/medium_logo.png": "/portfolio/static/media/medium_logo.7c312816d4888c4d2b8c.png",
-    "static/media/influxdb_logo.webp": "/portfolio/static/media/influxdb_logo.6f0a70a11fe23aebc758.webp",
-    "index.html": "/portfolio/index.html",
-    "main.bb702a40.css.map": "/portfolio/static/css/main.bb702a40.css.map",
-    "main.e0fe9f9e.js.map": "/portfolio/static/js/main.e0fe9f9e.js.map",
-    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/Portfolio/static/css/main.c8824bd4.css",
+    "main.js": "/Portfolio/static/js/main.3b9c50fc.js",
+    "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/python_logo.png": "/Portfolio/static/media/python_logo.368ff420d152a71031c0.png",
+    "static/media/deeplearning_logo.png": "/Portfolio/static/media/deeplearning_logo.3c6368e202f6eb2ee79c.png",
+    "static/media/Goudy Old Style.woff": "/Portfolio/static/media/Goudy Old Style.334887ee3ea09bab6520.woff",
+    "static/media/k8_logo.png": "/Portfolio/static/media/k8_logo.7cdb846c2eabcda532bb.png",
+    "static/media/black_me.png": "/Portfolio/static/media/black_me.9e70355a3999bdf0ba64.png",
+    "static/media/elasticsearch_logo.png": "/Portfolio/static/media/elasticsearch_logo.5ba4825db78dbfbfc7d6.png",
+    "static/media/Kingsland.woff": "/Portfolio/static/media/Kingsland.1bafd6c961a8add15fda.woff",
+    "static/media/rest_logo.png": "/Portfolio/static/media/rest_logo.00cc7d22aaf3dee9ed5e.png",
+    "static/media/gunicorn_logo.png": "/Portfolio/static/media/gunicorn_logo.918e94f42880def0b264.png",
+    "static/media/flask_logo.png": "/Portfolio/static/media/flask_logo.8f280e616cffd5c0f1d9.png",
+    "static/media/medium_logo.png": "/Portfolio/static/media/medium_logo.7c312816d4888c4d2b8c.png",
+    "static/media/influxdb_logo.webp": "/Portfolio/static/media/influxdb_logo.6f0a70a11fe23aebc758.webp",
+    "index.html": "/Portfolio/index.html",
+    "main.c8824bd4.css.map": "/Portfolio/static/css/main.c8824bd4.css.map",
+    "main.3b9c50fc.js.map": "/Portfolio/static/js/main.3b9c50fc.js.map",
+    "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb702a40.css",
-    "static/js/main.e0fe9f9e.js"
+    "static/css/main.c8824bd4.css",
+    "static/js/main.3b9c50fc.js"
   ]
 }
